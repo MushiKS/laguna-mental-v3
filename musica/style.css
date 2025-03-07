@@ -1,0 +1,142 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: grey;
+}
+
+h1 {
+    border: 1px solid red;
+}
+
+/* Contenedor principal */
+.container {
+    border: 2px solid green;  /* Borde verde para visualizar el área de contención */
+    display: flex;  /* Flexbox para organizar los artículos dentro de la sección */
+    flex-direction: column;  /* Establece que los artículos dentro de .container se apilen verticalmente */
+    width: 70%;  /* Define el ancho del contenedor principal al 70% del ancho de la pantalla */
+    padding: 10px;  /* Añade espacio interno dentro del contenedor */
+    margin: 0 auto;  /* Centra el contenedor horizontalmente en la página */
+    gap: 20px;  /* Espacio entre los elementos dentro del contenedor */
+    }
+
+.contenedor-principal {
+    display: flex;
+    gap: 20px; /* Espacio entre el reproductor y la lista de canciones */
+}
+
+.reproductor {
+    border: 1px solid blue; /* Borde azul para visualizar el área del reproductor */
+    display: block; /* Se mantiene como bloque */
+    padding: 10px;  /* Espacio interno dentro del reproductor */
+    text-align: center;  /* Centra el contenido (títulos, texto) dentro del reproductor */
+}
+/* Bloque donde está la lista de canciones */
+.canciones {
+    border: 1px solid chocolate;  /* Borde marrón */
+    margin-left: 20px;  /* Separación entre el reproductor y la lista */
+    padding: 30px 500px 30px 30px;  /* Espacio interno */
+}
+
+.reproductor img {
+    display: block; /* Asegura que la imagen ocupe toda la línea */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.reproductor audio {
+    display: block; /* Hace que el audio esté en una línea aparte */
+    margin: 10px auto;  /* Espaciado arriba y abajo, y centrado */
+}
+
+.song-item {
+    display: flex; /* Usamos Flexbox para alinear los elementos en una fila */
+    align-items: center;  /* Alinea los elementos verticalmente en el centro */
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 15px; /* Espacio entre cada canción */
+}
+
+.song-item img {
+    width: 50px; /* Ajusta el tamaño de las imágenes */
+    height: auto;/* Mantén la relación de aspecto de la imagen */
+}
+
+.song-item div {
+    display: flex;
+    flex-direction: column; /* Organiza el texto de la canción y la banda de manera vertical */
+    gap: 5px; /* Espacio entre la canción y la banda */
+
+}
+
+.song-item p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+
+.band {
+    font-size: italic;
+    color: #555;
+}
+
+.reproductor-secundario {
+    border: 1px solid blueviolet;
+    padding: 10px;
+    text-align: left;
+    width: 95%; /* Define un tamaño fijo para el reproductor secundario */
+    margin-top: 20px; /* Separación superior */
+}
+/* Contenedor para el reproductor secundario (imagen y texto de la canción) */
+.reproductor-secundario-contenido {
+    display: flex; /* Usamos flexbox para que la imagen y el texto estén en fila */
+    gap: 15px; /* Espacio entre la imagen y el texto */
+    align-items: center; /* Alineación vertical centrada */
+}
+
+.reproductor-secundario-contenido img {
+    width: 70px;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.song-info p {
+    margin: 0;
+}
+
+.reproductor-secundario audio {
+    display: block;  /* Hace que el audio esté en una línea aparte */
+    margin-top: 10px;  /* Añade espacio arriba del reproductor de audio */
+    word-wrap: 100%;
+    }
+
+    /* Estilo para la línea de progreso (slider) del reproductor secundario */
+.reproductor-secundario input[type="range"] {
+    width: 100%;  /* Esto hace que la línea de progreso ocupe todo el ancho del reproductor */
+    margin-top: 10px;  /* Espacio entre el reproductor de audio y la línea de progreso */
+    height: 8px;  /* Ajusta el grosor de la línea de progreso */
+    background: white;  /* Color de fondo de la línea de progreso */
+    border-radius: 5px;  /* Bordes redondeados para la línea de progreso */
+}
+
+.reproductor-secundario-controls {
+    display: flex; /* Usa Flexbox para alinear los botones */
+    justify-content: flex-end; /* Usa Flexbox para alinear los botones */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 10px; /* Espacio arriba de los botones */
+}
+
+/* Estilo de los botones */
+.reproductor-secundario-controls button {
+    background-color: #4CAF50;  /* Fondo verde para los botones */
+    border: none;  /* Elimina el borde predeterminado */
+    color: white;  /* Texto blanco en los botones */
+    padding: 8px 10px;  /* Espacio interno de los botones */
+    border-radius: 5px;  /* Bordes redondeados */
+    cursor: pointer;  /* Cambia el cursor cuando pasa sobre el botón */
+    font-size: 10px;  /* Tamaño del texto en los botones */
+    }

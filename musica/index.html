@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/musica/style.css">
+</head>
+    <body>
+        <h1>Biblioteca de Música</h1>
+
+    <section class="container">
+        <!--reproductor-->
+        <div class="contenedor-principal">
+        <article class="reproductor">
+        <img src="/musica/assets/img/disco.jpg" alt="el motorizado" width="300px">
+        <h2>El mato a un policia motorizado</h2>
+        <p>Hello world</p>
+        <p>album</p>
+    <!-- Reproductor de audio -->
+    <div class="audio-container">
+        <audio id="audio" src="assets/song/hello_world.mp3"></audio>
+        <input type="range" id="progress" class="slider" value="0" min="0" step="0.1">
+    </div>
+
+    <!-- Botones del reproductor -->
+    <div class="controls">
+        <button>⏮️</button>
+        <button>▶️ / ⏸</button>
+        <button>⏭️</button>
+    </article>
+    <article class="canciones">
+        <!-- <h2>Lista de canciones</h2>  -->
+        <div class="song-item">
+            <img src="assets/img/disco.jpg" alt="Hotel California" />
+            <div>
+            <p>🎶 Hotel California</p>
+            <p class="band">Eagles</p>
+        </div>
+        </div>
+        <div class="song-item">
+            <img src="assets/img/disco.jpg" alt="Smells Like Teen Spirit" />
+            <div>
+            <p>🎶 Smells Like Teen Spirit</p>
+            <p class="band">Nirvana</p>
+        </div>
+        </div>
+        <div class="song-item">
+            <img src="assets/img/disco.jpg" alt="Shape of You" />
+            <div>
+            <p>🎶 Shape of You</p>
+            <p class="band">Ed Sheeran</p>
+        </div>
+        </div>
+        <div class="song-item">
+            <img src="assets/img/disco.jpg" alt="Billie Jean" />
+            <div>
+            <p>🎶 Billie Jean</p>
+            <p class="band">Michael Jackson</p>
+        </div>
+        </div>
+    </div>  
+            <!-- Reproductor secundario -->
+    </article>
+    <article class="reproductor-secundario">
+        <div class="reproductor-secundario-contenido">
+        <img src="assets/img/disco.jpg" alt="" width="200px"> 
+        <div class="song-info">
+        <h4>Hello World</h4>
+        <p class="band">El mato a un policia motorizado</p>
+    </div> 
+    </div>
+    <div class="reproductor-secundario-controls">
+        <!-- Botones de control -->
+        <button>⏮️</button>
+        <button>▶️ / ⏸</button>
+        <button>⏭️</button>
+    </div>
+    <input type="range" class="progress" value="0" min="0" step="0.1">
+    <audio src="assets/song/hello_world.mp3"></audio>
+    </article>
+    </section>
+</body>
+</html>
